@@ -1,0 +1,78 @@
+body {
+    background-color: #F4F4F4; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    font-size: 16px; /* Tamaño de fuente adecuado */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+header {
+    background-color: #A8E6CF; /* Verde pastel para el encabezado */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar texto */
+}
+
+h1 {
+    color: #079243; /* Verde oscuro para el título */
+}
+
+.navbar {
+    background-color: #D0E8D0; /* Verde suave para la barra de navegación */
+}
+
+.nav-link {
+    color: #0a0a0a; /* Texto oscuro en enlaces */
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: #A8E6CF; /* Verde pastel al pasar el mouse o enfocar */
+    color: #0c0c0c; /* Mantener texto blanco */
+}
+
+.container {
+    margin-top: 20px; /* Espaciado superior para el contenedor */
+}
+
+h5.highlight {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #079243; /* Color del texto */
+}
+
+
+.row {
+    margin-bottom: 100px; /* Espaciado inferior entre filas */
+}
+
+.img-fluid {
+    border-radius: 10px; /* Bordes redondeados para imágenes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+footer {
+    background-color: #343a40; /* Fondo oscuro para el pie de página */
+    color: #ffffff; /* Texto blanco en el pie de página */
+    text-align: center; /* Centrar texto */
+    padding: 15px 0; /* Espaciado superior e inferior */
+}
+
+footer a {
+    color: #ffc107; /* Color amarillo para enlaces en el pie de página */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
+}
+
+/* Media Queries para Ajustar el Diseño */
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #F4F4F4; /* Fondo claro para la barra de navegación en dispositivos móviles */
+    }
+
+    h5.highlight {
+        font-size: 1.2em; /* Aumentar tamaño de fuente en dispositivos móviles */
+    }
+}

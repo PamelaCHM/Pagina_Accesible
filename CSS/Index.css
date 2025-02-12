@@ -1,0 +1,97 @@
+body {
+    background-color: #F4F4F4; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    font-size: 16px; /* Tamaño de fuente adecuado */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+h2, h3 {
+    color: #079243; /* Verde oscuro para encabezados */
+
+}
+
+h1{
+    color: #079243; /* Verde oscuro para encabezados */
+    text-align: center;
+}
+
+.navbar {
+    background-color: #A8E6CF; /* Verde pastel para la barra de navegación */
+}
+
+.nav-link {
+    color: #0a0a0a; /* Texto oscuro en enlaces */
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: #D0E8D0; /* Verde suave al pasar el mouse o enfocar */
+    color: #0e0e0e; /* Mantener texto blanco */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+    color: #ffffff; /* Texto blanco en las descripciones del carrusel */
+}
+
+.carousel-caption h5 {
+    color: #5CDB95; /* Verde más intenso para títulos en el carrusel */
+}
+
+footer {
+    background-color: #A8E6CF; /* Verde pastel para el pie de página */
+    color: #ffffff; /* Texto blanco en el pie de página */
+}
+
+footer a {
+    color: #D0E8D0; /* Verde suave para enlaces en el pie de página */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
+}
+
+.card {
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card h2 {
+    color: #079243; /* Verde oscuro para el encabezado de la tarjeta */
+}
+
+.card p {
+    color: #333; /* Color oscuro para el texto */
+}
+
+/* Efectos de Transición */
+
+.navbar, .carousel-caption, footer {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Media Queries para Ajustar el Diseño */
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #F4F4F4; /* Fondo claro para la barra de navegación en dispositivos móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption {
+        font-size: 14px; /* Ajustar tamaño de fuente en dispositivos móviles */
+    }
+}
+
+.carousel-caption h5 {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    color: #079243; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
