@@ -29,6 +29,11 @@ h1{
     color: #0e0e0e; /* Mantener texto blanco */
 }
 
+.carousel {
+    max-width: 80%; /* Ajusta el ancho según tu preferencia */
+    margin: auto; /* Centra horizontalmente */
+  }
+
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
     color: #ffffff; /* Texto blanco en las descripciones del carrusel */
