@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--H57: Proporciona el atributo lang para que lectores de pantalla pronuncien correctamente el contenido-->
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
         <h1>Los Postrecitos</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" role="navigation">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,14 +39,16 @@
         </div>
       </nav>
 
-      <main>
+      <main role="main">
         <section id="formularioRecomendacion" class="container mt-5">
             <h2 class="text-center mb-4">Encuesta de Recomendaciones</h2>
             <form id="recomendacionForm" class="p-4 border rounded shadow bg-light">
                 <fieldset>
                     <div class="mb-3">
+                      <!-- H44: Relaciona etiquetas con campos de formulario para facilitar su identificación con lectores de pantalla-->
                         <label for="nombre" class="form-label">Ingrese su nombre:</label>
-                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su nombre">
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingrese su nombre" aria-required="true">
+                        <!-- ARIA4: Se agrega aria-required="true" en los campos obligatorios para informar a los usuarios-->
                     </div>
                     <div class="mb-3">
                         <label class="form-label">¿Cuál de las opciones es tu postre favorito?</label>
@@ -58,13 +61,18 @@
                     </div>
                     <div class="mb-3">
                         <label for="postreNuevo" class="form-label">¿Cuál postre nuevo le gustaría agregar?</label>
-                        <input type="text" id="postreNuevo" name="postreNuevo" class="form-control" placeholder="Escriba su sugerencia">
+                        <input type="text" id="postreNuevo" name="postreNuevo" class="form-control" placeholder="Escriba su sugerencia" aria-required="true">
                     </div>
                     <div class="mb-3">
                         <label for="recomendacion" class="form-label">Recomendación:</label>
-                        <textarea id="recomendacion" name="recomendacion" class="form-control" rows="3" placeholder="Ingrese su recomendación"></textarea>
+                        <!--ARIA1.3.1: Mejora la comprensión de los campos al proporcionar descripciones adicionales.-->
+                        <textarea id="recomendacion" name="recomendacion" class="form-control" rows="3" placeholder="Ingrese su recomendación" aria-describedby="recomendacion-ayuda"></textarea>
+                        <small id="recomendacion-ayuda" class="text-muted">Escriba su recomendación sobre nuestros postres</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar Recomendación</button>
+                    <button type="submit" class="btn btn-primary" aria-label="Enviar la recomendación del formulario">Enviar Recomendación</button>
+                    <!--ARIA4.1.3: Informa a los usuarios cuando un mensaje de validación aparece en la página
+                    class="sr-only" oculta el mensaje visualmente pero lo mantiene disponible para los lectores de pantalla-->
+                    <div id="mensaje-validacion" aria-live="polite" class="sr-only"></div>
                 </fieldset>
             </form>
         </section>
