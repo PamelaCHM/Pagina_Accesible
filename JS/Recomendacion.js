@@ -16,3 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
         this.reset();
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("recomendacionForm");
+    const inputs = form.querySelectorAll("input, select, textarea");
+
+    inputs.forEach((input, index) => {
+        input.addEventListener("keydown", function (event) {
+            if (event.key === "Tab") {
+                if (!input.value.trim()) {
+                    event.preventDefault(); // Evita el tab si el campo está vacío
+                }
+            }
+        });
+
+        input.addEventListener("blur", function () {
+            if (!input.value.trim()) {
+                input.focus(); // Mantiene el foco en el campo hasta que se llene
+            }
+        });
+    });
+});
