@@ -43,6 +43,9 @@ h5.highlight {
 
 .row {
     margin-bottom: 100px; /* Espaciado inferior entre filas */
+    background-color: #A8E6CF;
+    padding: 25px;
+    border-radius: 15px;
 }
 
 .img-fluid {
