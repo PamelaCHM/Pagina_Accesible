@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (event.key === "Tab") {
                 if (!input.value.trim()) {
                     event.preventDefault(); // Evita el tab si el campo está vacío
+                    alert("Complete este campo para continuar");
                 }
             }
         });
